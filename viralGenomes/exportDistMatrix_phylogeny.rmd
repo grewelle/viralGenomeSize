@@ -1,0 +1,21 @@
+---
+title: "DatathonSampleModelsHpv"
+author: "RG"
+date: "April 21, 2020"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+```{r}
+# Packages
+library(knitr)
+library(ape)
+
+tree<-read.tree("C:/Users/Richard/Desktop/ViralSequences/herpesviridae.tre")
+PatristicDistMatrix<-cophenetic.phylo(tree)
+
+
+```
